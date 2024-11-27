@@ -10,6 +10,7 @@ class Order {
     public Order(String orderNumber) {
         this.orderNumber = orderNumber;
         this.orderLines = new ArrayList<>();
+        this.addOrderLine(new OrderLine(this));
     }
 
     public void addOrderLine(OrderLine orderLine) {
