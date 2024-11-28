@@ -12,7 +12,8 @@ public class Admin {
 
 
     public static Admin getInstance(List<Property> properties) {
-        if ( instance == null ) {
+        if ( instance == null || !instance.properties.equals(properties)) {
+
             instance = new Admin(properties);
         }
         return instance;
@@ -29,8 +30,10 @@ public class Admin {
     }
 
     public List<Property> getPropertiesByCity(String city) {
-        properties.removeIf((value) -> !value.city.equals(city));
-        return properties;
+       return properties.stream()
+               .filter((value) -> value.city.equals(city)).toList();
     }
+
+
 
 }
