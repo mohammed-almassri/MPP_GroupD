@@ -2,7 +2,7 @@ package lesson3.labs.prob1;
 
 /**
  * p1 is an instance of PersonWithJob, while p2 is an instance of Person.
- * They are not equal because Person is a subclass of PersonWithJob.
+ * They are not equal because Person is a super class of PersonWithJob.
  * And the equals method in each class checks if the objects are instances of the same class.
  * Since they are different classes, the comparison fails.
  * Additionally, the PersonWithJob class considers salary in its equal's implementation.
