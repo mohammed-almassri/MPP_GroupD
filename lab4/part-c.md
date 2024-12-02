@@ -1,4 +1,4 @@
-# Q3
+# Part C
 
 ```
 Main.java
