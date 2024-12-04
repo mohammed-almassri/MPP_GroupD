@@ -7,7 +7,7 @@ import lesson5.labs.prob4.Order;
 
 public class Main {
 	public static void main(String[] args) {
-		Customer cust = new Customer("Bob");
+		Customer cust = CustOrderFactory.createCustomer("Bob");
 		Order order = CustOrderFactory.createOrder(cust, LocalDate.now());
 		order.addItem("Shirt");
 		order.addItem("Laptop");

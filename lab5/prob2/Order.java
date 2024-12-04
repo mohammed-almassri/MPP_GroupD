@@ -16,7 +16,7 @@ public class Order {
 	}
 
 	public void addItem(String name){
-		items.add(new Item(name));
+		items.add(CustOrderFactory.createItem(name));
 	}
 	@Override
 	public String toString() {
